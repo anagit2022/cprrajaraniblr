@@ -51,7 +51,7 @@ function setup() {
   canvas.parent("p5Screen");
 
   // 🔥 MOST IMPORTANT LINE
-  canvas.style("pointer-events", "none");
+  canvas.style("pointer-events", "auto");
   breath_no = floor(random(11));
   console.log(breath_no);
   maxTotalCompressions = floor(random(30, 50));
