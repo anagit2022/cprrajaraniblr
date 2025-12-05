@@ -47,6 +47,11 @@ function preload(){
   arrowimg = loadImage("arrow2.png");
 }
 function setup() {
+  let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.parent("p5Screen");
+
+  // 🔥 MOST IMPORTANT LINE
+  canvas.style("pointer-events", "none");
   breath_no = floor(random(11));
   console.log(breath_no);
   maxTotalCompressions = floor(random(30, 50));
