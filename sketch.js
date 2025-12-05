@@ -975,10 +975,4 @@ function reset(){
   breath_no = floor(random(11));
   //cpr2t = 0;
 }
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
-function touchStarted() {
-  mousePressed(); // Use the same logic
-  return false; // Prevent default browser touch behavior
-}
+
