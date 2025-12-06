@@ -325,27 +325,26 @@
     </div>
 
     <div class="keypad">
-        <button class="key" onclick="addDigit('1')">1</button>
-        <button class="key" onclick="addDigit('2')">2<span class="key-label">ABC</span></button>
-        <button class="key" onclick="addDigit('3')">3<span class="key-label">DEF</span></button>
-        
-        <button class="key" onclick="addDigit('4')">4<span class="key-label">GHI</span></button>
-        <button class="key" onclick="addDigit('5')">5<span class="key-label">JKL</span></button>
-        <button class="key" onclick="addDigit('6')">6<span class="key-label">MNO</span></button>
-        
-        <button class="key" onclick="addDigit('7')">7<span class="key-label">PQRS</span></button>
-        <button class="key" onclick="addDigit('8')">8<span class="key-label">TUV</span></button>
-        <button class="key" onclick="addDigit('9')">9<span class="key-label">WXYZ</span></button>
-        
-        <button class="key" onclick="addDigit('*')">*</button>
-        <button class="key" onclick="addDigit('0')">0</button>
-        <button class="key" onclick="addDigit('#')">#</button>
-    </div>
+    <button class="key" id="dialBtn1">1</button> 
+    <button class="key" id="dialBtn2">2<span class="key-label">ABC</span></button>
+    <button class="key" id="dialBtn3">3<span class="key-label">DEF</span></button>
+    
+    <button class="key" id="dialBtn4">4<span class="key-label">GHI</span></button>
+    <button class="key" id="dialBtn5">5<span class="key-label">JKL</span></button>
+    <button class="key" id="dialBtn6">6<span class="key-label">MNO</span></button>
+    
+    <button class="key" id="dialBtn7">7<span class="key-label">PQRS</span></button>
+    <button class="key" id="dialBtn8">8<span class="key-label">TUV</span></button>
+    <button class="key" id="dialBtn9">9<span class="key-label">WXYZ</span></button>
+    
+    <button class="key" id="dialBtnStar">*</button>
+    <button class="key" id="dialBtn0">0</button>
+    <button class="key" id="dialBtnHash">#</button>
+</div>
 
-    <div class="button-row">
-        <button class="delete-button" onclick="deleteDigit()">⌫</button>
-        <button class="call-button" id="callBtn" onclick="makeCall()" disabled> <img src="image.png" class="call-icon" />
-</button>
+<div class="button-row">
+    <button class="delete-button" id="deleteBtnDial">⌫</button> 
+    <button class="call-button" id="callBtn" disabled> <img src="image.png" class="call-icon" /></button>
     </div>
 </div>
 <div class="screen" id="addspeaker">
