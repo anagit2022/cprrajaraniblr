@@ -172,7 +172,7 @@ display: flex;
 }
 #practiceagainbtn,#practiceagainbtnraja,#practiceagainbtnrani{
   position: absolute;
-    bottom: 8vh;      /* Distance from bottom */
+    bottom: 15vh;      /* Distance from bottom */
     right: 22vw;      /* Distance from right */
     width: 100%;      /* Button size */
     max-width: 200px;
