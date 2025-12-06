@@ -178,7 +178,8 @@ window.onload = () => {
     // ========================================
 
     // --- DIAL PAD Element Definitions ---
-    const dialDisplay = document.getElementById("ambulance-number"); 
+    // FIX: Changed "ambulance-number" to "dialDisplay" to match your HTML
+    const dialDisplay = document.getElementById("dialDisplay"); 
     const dialBtn0 = document.getElementById("dialBtn0");
     const dialBtn1 = document.getElementById("dialBtn1");
     const dialBtn2 = document.getElementById("dialBtn2");
@@ -267,7 +268,7 @@ window.onload = () => {
 
     // --- Initialize Dial Pad State ---
     checkCallButtonState(); // Make sure the call button is disabled on load
-   const dialDisplay = document.getElementById("dialDisplay");
+    dialDisplay.textContent = "112"; // Set initial placeholder text
     dialDisplay.classList.add("empty"); 
 
     // ========================================
