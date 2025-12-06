@@ -1176,12 +1176,12 @@ function handle_performance(){
         if(fastcount>slowcount){
         currentState = "latefast";
         p5Screen.style.display = "none";
-        late.style.display = "flex";
+        latefast.style.display = "flex";
         }else
         if(slowcount>fastcount){
         currentState = "lateslow";
         p5Screen.style.display = "none";
-        late.style.display = "flex";
+        lateslow.style.display = "flex";
         
         //lateaud.play();
         
