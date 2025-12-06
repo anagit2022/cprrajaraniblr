@@ -4,7 +4,7 @@ let listeningForResponse = false;
 let responseTimeout = null;
 let breath_no ;
 let dialedNumber = ''; // <-- Dial Pad Variable
-let t1, t2, t3, t4, t5;
+let t1, t2, t3, t4, t5,t6;
 let canvas;
 let canvasActive = false;
 let count=0;
@@ -646,6 +646,12 @@ window.onload = () => {
                         t5 = setTimeout(() => {
                             cpr3.style.display = "none";
                             cpr4.style.display = "flex";
+
+                          
+                        t6 = setTimeout(() => {
+                            cpr4.style.display = "none";
+                            cpr5.style.display = "flex";
+                            },5000;
                         }, 5000);
                     }, 5000);
                 }, 5000);
