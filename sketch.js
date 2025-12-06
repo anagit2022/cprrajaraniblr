@@ -267,7 +267,7 @@ window.onload = () => {
 
     // --- Initialize Dial Pad State ---
     checkCallButtonState(); // Make sure the call button is disabled on load
-    dialDisplay.textContent = "112"; // Set initial placeholder text
+   const dialDisplay = document.getElementById("dialDisplay");
     dialDisplay.classList.add("empty"); 
 
     // ========================================
