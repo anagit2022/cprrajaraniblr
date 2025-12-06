@@ -193,11 +193,13 @@ function removeCanvas() {
     canvasActive = false;
   }
 }
-  beginBtn.onclick = () => {
+  // Button: beginBtn
+const handleBegin = () => {
     begin1.style.display = "none";
     gender.style.display = "flex";
-  };
-
+};
+beginBtn.onclick = handleBegin;
+beginBtn.addEventListener('touchstart', handleBegin);
   rajaBtn.onclick = () => {
     genderState = 1;           // ✔ Raja
     console.log("Gender:", genderState);
