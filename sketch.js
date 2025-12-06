@@ -748,6 +748,7 @@ window.onload = () => {
 
     // Button: wpromisepress (Promise Sealed Raja - Win)
     const handleWPromisePress = () => {
+  
         promisewrajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
@@ -760,6 +761,12 @@ window.onload = () => {
         promisesealedraja.style.display = "none";
         begin1.style.display = "flex";
         reset();
+    
+    // 2. Explicitly reset the dial pad UI (since dialDisplay is defined here)
+    dialDisplay.textContent = "112"; // Set back to placeholder
+    dialDisplay.classList.add("empty");
+    callBtn.disabled = true;
+    callBtn.style.opacity = 0.5;
     };
     practiceagainbtnraja.onclick = handlePracticeAgainRaja;
     practiceagainbtnraja.addEventListener('touchstart', handlePracticeAgainRaja);
@@ -770,6 +777,10 @@ window.onload = () => {
         promisesealedrani.style.display = "none";
         begin1.style.display = "flex";
         reset();
+      dialDisplay.textContent = "112"; // Set back to placeholder
+    dialDisplay.classList.add("empty");
+    callBtn.disabled = true;
+    callBtn.style.opacity = 0.5;
     };
     practiceagainbtnrani.onclick = handlePracticeAgainRani;
     practiceagainbtnrani.addEventListener('touchstart', handlePracticeAgainRani);
@@ -1187,6 +1198,7 @@ function reset(){
   cprtpass = 0;
   call_time = 0;
   breath_no = floor(random(11));
+  dialedNumber = '';
   //cpr2t = 0;
 }
 function windowResized() {
