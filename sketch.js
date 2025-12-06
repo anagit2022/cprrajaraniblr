@@ -422,7 +422,4 @@ window.addEventListener("DOMContentLoaded", () => {
     checkbreathingtypeq.style.display = "flex";
   };
 
-  normalBtn.onclick = () => {
-    breathingtype.pause();
-    breathingtype.currentTime = 0;
-    checkbre
+  
