@@ -527,8 +527,6 @@ window.onload = () => {
 
     // Button: bnoBtn (Breathing No)
     const handleBno = () => {
-        could_you_see_breathing.pause();
-        could_you_see_breathing.currentTime=0;
         requestaedaud.play();
         checkbreathingq.style.display = "none";
         requestaed.style.display = "flex";
