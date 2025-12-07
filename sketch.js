@@ -512,11 +512,10 @@ window.onload = () => {
             console.log(20);
         }
         setTimeout(() => {
-              if(breathc == 1){
-                     could_you_see_breathing.play();
-              }
+            
             checkbreathing.style.display = "none";
             checkbreathingq.style.display = "flex";
+            could_you_see_breathing.play();
     
         },10000);
     };
