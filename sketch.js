@@ -295,6 +295,7 @@ window.onload = () => {
 
     // Button: beginBtn
     const handleBegin = () => {
+      could_you_see_breathing.play();
         begin1.style.display = "none";
         gender.style.display = "flex";
     };
