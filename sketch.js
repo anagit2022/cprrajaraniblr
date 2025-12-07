@@ -1,4 +1,5 @@
 let genderState = null;   // 1 = Raja, 0 = Rani
+let audioUnlocked = false;
 let mic;
 let listeningForResponse = false;
 let responseTimeout = null;
@@ -54,6 +55,8 @@ function preload(){
 couldbreath = loadSound("could_you_see_breathing.mp3");
 }
 function setup() {
+  window.addEventListener("touchstart", unlockAudio, { once: true });
+  window.addEventListener("click", unlockAudio, { once: true });
   breath_no = floor(random(11));
   console.log(breath_no);
   maxTotalCompressions = floor(random(30, 50));
@@ -1215,6 +1218,13 @@ function reset(){
   breath_no = floor(random(11));
   dialedNumber = '';
   //cpr2t = 0;
+}
+function unlockAudio() {
+  if (!audioUnlocked) {
+    userStartAudio();  // ★ REQUIRED for p5.js on mobile
+    audioUnlocked = true;
+    console.log("AUDIO UNLOCKED");
+  }
 }
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
