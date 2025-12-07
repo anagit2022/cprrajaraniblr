@@ -519,7 +519,7 @@ window.onload = () => {
             
             checkbreathing.style.display = "none";
             checkbreathingq.style.display = "flex";
-           
+           could_you_see_breathing.play();
             
     
         },10000);
