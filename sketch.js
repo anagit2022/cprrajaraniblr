@@ -36,7 +36,9 @@ let fastcount =0;
 let slowcount = 0;
 // track inactivity
 let pressed_time = 0 ;
-lastTouchElapsed = 0;
+let lastTouchElapsed = 0;
+// 
+let breathc =0;
 // play screen
 let playimg,heartimg,meterimg,arrowimg;
 function preload(){
@@ -495,7 +497,7 @@ window.onload = () => {
         did_spongy_respond.pause();
         did_spongy_respond.currentTime = 0;
         check_if_breathing.play();
-      could_you_see_breathing.play();
+          breathc=1;
         checkresponseq.style.display = "none";
         awake.style.display = "none";
         checkbreathing.style.display = "flex";
@@ -510,6 +512,9 @@ window.onload = () => {
             console.log(20);
         }
         setTimeout(() => {
+              if(breathc == 1){
+                     could_you_see_breathing.play();
+              }
             checkbreathing.style.display = "none";
             checkbreathingq.style.display = "flex";
     
