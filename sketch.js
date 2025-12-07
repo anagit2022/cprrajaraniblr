@@ -38,7 +38,7 @@ let slowcount = 0;
 let pressed_time = 0 ;
 let lastTouchElapsed = 0;
 // 
-let breathc =0;
+let breathc;
 // play screen
 let playimg,heartimg,meterimg,arrowimg;
 function preload(){
@@ -47,6 +47,10 @@ function preload(){
   heartimg = loadImage("heart.png");
   meterimg = loadImage("bpm meter86.png");
   arrowimg = loadImage("arrow2.png");
+}
+
+function preload(){
+breathc = loadSound("could_you_see_breathing.mp3");
 }
 function setup() {
   breath_no = floor(random(11));
@@ -497,7 +501,6 @@ window.onload = () => {
         did_spongy_respond.pause();
         did_spongy_respond.currentTime = 0;
         check_if_breathing.play();
-          breathc=1;
         checkresponseq.style.display = "none";
         awake.style.display = "none";
         checkbreathing.style.display = "flex";
@@ -515,7 +518,7 @@ window.onload = () => {
             
             checkbreathing.style.display = "none";
             checkbreathingq.style.display = "flex";
-            could_you_see_breathing.play();
+            breathc.play();
     
         },10000);
     };
