@@ -435,8 +435,7 @@ window.onload = () => {
         promisedaud.pause();
         promisedaud.currentTime = 0;
         promisejingle.play();
-        // Assuming 'test.play()' is another audio cue
-        // test.play();
+        test.play();
         promisedranipress.style.display = "none";
         promisesealedrani.style.display = "flex";
     };
