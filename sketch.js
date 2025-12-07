@@ -1012,7 +1012,7 @@ function playScreen(){
   push();
   noStroke();
   fill("#EEEEEE");
-  rect(122, 44, 210, 11, 11);
+  rect(122, 44, 200, 11, 11);
   pop();
   push();
   imageMode(CENTER);
@@ -1062,7 +1062,7 @@ function playScreen(){
   //live rect
   progress-= 1;
   console.log(progress);
-  progress = constrain(progress, 6, 210);
+  progress = constrain(progress, 6, 200);
   push();
   noStroke();
   fill("#FF5058");
@@ -1097,7 +1097,7 @@ function playScreen(){
    // display time left 
   push();
   angleMode(RADIANS);
-  translate(30,600);
+  translate(30,590);
   rotate(-HALF_PI);
   textAlign(CENTER, TOP);
   textSize(20);
