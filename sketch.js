@@ -295,7 +295,7 @@ window.onload = () => {
 
     // Button: beginBtn
     const handleBegin = () => {
-      could_you_see_breathing.play();
+      
         begin1.style.display = "none";
         gender.style.display = "flex";
     };
@@ -495,6 +495,7 @@ window.onload = () => {
         did_spongy_respond.pause();
         did_spongy_respond.currentTime = 0;
         check_if_breathing.play();
+      could_you_see_breathing.play();
         checkresponseq.style.display = "none";
         awake.style.display = "none";
         checkbreathing.style.display = "flex";
@@ -511,7 +512,7 @@ window.onload = () => {
         setTimeout(() => {
             checkbreathing.style.display = "none";
             checkbreathingq.style.display = "flex";
-            could_you_see_breathing.play();
+    
         },10000);
     };
     rnoBtn.onclick = handleRno;
