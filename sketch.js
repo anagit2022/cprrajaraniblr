@@ -51,9 +51,7 @@ function preload(){
   arrowimg = loadImage("arrow2.png");
 }
 
-function preload(){
-couldbreath = loadSound("could_you_see_breathing.mp3");
-}
+
 function setup() {
   window.addEventListener("touchstart", unlockAudio, { once: true });
   window.addEventListener("click", unlockAudio, { once: true });
