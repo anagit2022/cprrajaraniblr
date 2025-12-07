@@ -523,7 +523,7 @@ window.onload = () => {
             checkbreathing.style.display = "none";
             checkbreathingq.style.display = "flex";
            
-            
+            couldbreath.play();
     
         },10000);
     };
