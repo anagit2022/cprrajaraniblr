@@ -297,7 +297,7 @@ display: flex; /* show first screen by default */
 .button-row {
     display: flex;
     justify-content: center;
-    gap: 5vw;       /* responsive spacing */
+    gap: 3vw;       /* responsive spacing */
     position: absolute;
     bottom: 12vh;
   margin-top: 10vh;
