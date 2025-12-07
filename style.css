@@ -109,7 +109,7 @@ display: flex;
 }
 #nextvBtn {
   position: absolute;
-  bottom: 5vh;       /* distance from top */
+  bottom: 8vh;       /* distance from top */
   right: 10vw;     /* distance from right */
   width: 20vw   /* responsive size */
   cursor: pointer;
@@ -123,14 +123,14 @@ display: flex;
 }
 #nextprBtn,#nextaBtn,#nextc1,#nextc2,#nextc3,#nextc4{
   position: absolute;
-  bottom: 10vh;       /* distance from top */
+  bottom: 14vh;       /* distance from top */
   right: 10vw;     /* distance from right */
   width: 20vw   /* responsive size */
   cursor: pointer;
 }
 #dpromiseinstruc,#dpromisepress,#dpromiseseal,#dranipromisepress,#rranipromisepress,#rrajapromisepress,#bpromisepress,#branipromisepress,#wranipromisepress,#wpromisepress {
   position: absolute;
-  bottom: 1vh;       /* distance from top */
+  bottom: 5vh;       /* distance from top */
   right: 10vw;     /* distance from right */
   width: 20vw   /* responsive size */
   justify-content: center;
@@ -268,8 +268,8 @@ display: flex; /* show first screen by default */
     background: white;
     border: none;
     border-radius: 50%;
-    width: 18vw;         /* responsive size */
-    height: 18vw;        /* responsive size */
+    width: 14vw;         /* responsive size */
+    height: 14vw;        /* responsive size */
     max-width: 90px;     /* optional safety limit */
     max-height: 90px;
     font-size: 8vw;      /* responsive font */
@@ -299,7 +299,7 @@ display: flex; /* show first screen by default */
     justify-content: center;
     gap: 5vw;       /* responsive spacing */
     position: absolute;
-    bottom: 8vh;
+    bottom: 12vh;
   margin-top: 10vh;
 }
 
@@ -308,8 +308,8 @@ display: flex; /* show first screen by default */
     background: white;
     border: none;
     border-radius: 50%;
-    width: 18vw;             /* responsive */
-    height: 18vw;            /* responsive */
+    width: 14vw;             /* responsive */
+    height: 14vw;            /* responsive */
     max-width: 90px;         /* optional cap */
     max-height: 90px;
     font-size: 7vw;          /* responsive */
@@ -328,8 +328,8 @@ display: flex; /* show first screen by default */
     background: #B6DB54;
     border: none;
     border-radius: 50%;
-    width: 18vw;             /* responsive */
-    height: 18vw;            /* responsive */
+    width: 14vw;             /* responsive */
+    height: 14vw;            /* responsive */
     max-width: 90px;         /* optional safety limit */
     max-height: 90px;
     font-size: 7vw;          /* responsive */
