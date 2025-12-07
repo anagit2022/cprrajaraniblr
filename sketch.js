@@ -38,7 +38,8 @@ let slowcount = 0;
 let pressed_time = 0 ;
 let lastTouchElapsed = 0;
 // 
-let breathc;
+let breathc = 0;
+let couldbreath;
 // play screen
 let playimg,heartimg,meterimg,arrowimg;
 function preload(){
@@ -50,7 +51,7 @@ function preload(){
 }
 
 function preload(){
-breathc = loadSound("could_you_see_breathing.mp3");
+couldbreath = loadSound("could_you_see_breathing.mp3");
 }
 function setup() {
   breath_no = floor(random(11));
@@ -518,7 +519,8 @@ window.onload = () => {
             
             checkbreathing.style.display = "none";
             checkbreathingq.style.display = "flex";
-            breathc.play();
+            breathc = 1;
+            
     
         },10000);
     };
@@ -979,6 +981,9 @@ function draw() {
       awake.style.display = "flex";
     }
    // listeningForResponse = false;   // stop listening once detected
+  }
+  if(breathc === 1 ){
+      couldbreath.play();
   }
   if (!canvasActive) return;
 
