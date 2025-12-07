@@ -519,7 +519,7 @@ window.onload = () => {
             
             checkbreathing.style.display = "none";
             checkbreathingq.style.display = "flex";
-            breathc = 1;
+           
             
     
         },10000);
@@ -982,9 +982,7 @@ function draw() {
     }
    // listeningForResponse = false;   // stop listening once detected
   }
-  if(breathc === 1 ){
-      couldbreath.play();
-  }
+
   if (!canvasActive) return;
 
   background("#FFC5B7");
