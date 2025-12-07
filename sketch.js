@@ -542,8 +542,8 @@ window.onload = () => {
     // Button: byesBtn (Breathing Yes)
     const handleByes = () => {
         breathingtype.play();
-        could_you_see_breathing.pause();
-        could_you_see_breathing.currentTime=0;
+        couldbreath.pause();
+        couldbreath.currentTime=0;
         checkbreathingq.style.display = "none";
         checkbreathingtypeq.style.display = "flex";
     };
