@@ -50,9 +50,6 @@ function preload(){
   arrowimg = loadImage("arrow2.png");
 }
 
-function preload(){
-couldbreath = loadSound("could_you_see_breathing.mp3");
-}
 function setup() {
   breath_no = floor(random(11));
   console.log(breath_no);
