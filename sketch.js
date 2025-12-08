@@ -961,6 +961,25 @@ window.onload = () => {
     };
     nextlateslowBtn.onclick = handleNextLateSlow;
     nextlateslowBtn.addEventListener('touchstart', handleNextLateSlow);
+
+  
+    // Button: promiseslowfastrajapress
+    const handleLateslowRajaPromisePress = () => {
+        promiselatealowrajapress.style.display = "none";
+        promisesealedraja.style.display = "flex";
+    };
+    promiselateslowrajapress.onclick = handleLateslowRajaPromisePress;
+    promiselateslowrajapress.addEventListener('touchstart', handleLateslowRajaPromisePress);
+// Button: promiselateslowranipress
+    const handleLateslowRaniPromisePress = () => {
+        promiselateslowranipress.style.display = "none";
+        promisesealedrani.style.display = "flex";
+    };
+    promiselateslowranipress.onclick = handleLateslowRaniPromisePress;
+    promiselateslowranipress.addEventListener('touchstart', handleLateslowRaniPromisePress);
+
+  
+
 }; // End of window.onload
 
 // Rest of your functions (addDigit, deleteDigit, updateDisplay, makeCall, draw, mousePressed, etc.) remain as they are.
