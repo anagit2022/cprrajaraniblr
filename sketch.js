@@ -50,6 +50,8 @@ function preload(){
   arrowimg = loadImage("arrow2.png");
   //sound
   couldobserveb = loadSound("could_you_see_breathing.mp3");
+  ring = loadSound("mixkit-office-telephone-ring-1350.wav");
+  dial = loadSound("9aud.mp3");
 }
 
 function setup() {
