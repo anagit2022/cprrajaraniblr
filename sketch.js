@@ -307,7 +307,7 @@ window.onload = () => {
 
     // Button: beginBtn
     const handleBegin = () => {
-      
+        userStartAudio();
         begin1.style.display = "none";
         gender.style.display = "flex";
         gasp_aud.play();
@@ -505,6 +505,7 @@ window.onload = () => {
 
     // Button: rnoBtn (Response No)
     const handleRno = () => {
+        userStartAudio();
         did_spongy_respond.pause();
         did_spongy_respond.currentTime = 0;
         check_if_breathing.play();
