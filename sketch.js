@@ -689,23 +689,31 @@ window.onload = () => {
             t2 = setTimeout(() => {
                 victiminca.style.display = "none";
                 cpr1.style.display = "flex";
+              cprC1aud.play();
 
                 t3 = setTimeout(() => {
                     cpr1.style.display = "none";
                     cpr2.style.display = "flex";
+                  cprC2aud.play();
+                   cprC1aud.stop();
 
                     t4 = setTimeout(() => {
                         cpr2.style.display = "none";
                         cpr3.style.display = "flex";
+                      cprC3aud.play();
+                      cprC2aud.stop();
 
                         t5 = setTimeout(() => {
                             cpr3.style.display = "none";
                             cpr4.style.display = "flex";
-
+                            cprC4aud.play();
+                            cprC3aud.stop();
                           
                         t6 = setTimeout(() => {
                             cpr4.style.display = "none";
                             cpr5.style.display = "flex";
+                          cprC5aud.play();
+                          cprC4aud.stop();
                             },8000);
                         }, 8000);
                     }, 8000);
@@ -724,6 +732,7 @@ window.onload = () => {
         clearTimeout(t1);
         cpr1.style.display = "none";
         cpr2.style.display = "flex";
+      
     };
     nextc1.onclick = handleNextC1;
     nextc1.addEventListener('touchstart', handleNextC1);
@@ -734,6 +743,7 @@ window.onload = () => {
         clearTimeout(t2);
         cpr2.style.display = "none";
         cpr3.style.display = "flex";
+      
     };
     nextc2.onclick = handleNextC2;
     nextc2.addEventListener('touchstart', handleNextC2);
@@ -745,6 +755,7 @@ window.onload = () => {
         clearTimeout(t3);
         cpr3.style.display = "none";
         cpr4.style.display = "flex";
+      
     };
     nextc3.onclick = handleNextC3;
     nextc3.addEventListener('touchstart', handleNextC3);
