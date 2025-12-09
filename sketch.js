@@ -1036,6 +1036,8 @@ function draw() {
       checkresponse.style.display = "none";
       awake.style.display = "flex";
       respondedaud.play();
+      checkrAudio.pause();
+      checkrAudio.currentTime = 0;
     }
    // listeningForResponse = false;   // stop listening once detected
   }
