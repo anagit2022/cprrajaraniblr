@@ -49,6 +49,9 @@ function preload(){
   meterimg = loadImage("bpm meter86.png");
   arrowimg = loadImage("arrow2.png");
   //sound
+  respondedaud = loadSound("ElevenLabs_2025-06-I am .mp3");
+  promisertaud = loadSound("ElevenLabs_2025-11-04T11_56_30_Alice_pre_sp100_s50_sb75_v3.mp3");
+  //
   gasp_aud = loadSound("gasping.m4a");
   normal_breath_aud = loadSound("breathing-6811.mp3");
   couldobserveb = loadSound("could_you_see_breathing.mp3");
@@ -474,6 +477,7 @@ window.onload = () => {
     // Button: nextprBtn (from responded)
     const handleNextPR = () => {
         responded.style.display = "none";
+         promisertaud.play();
         if(genderState === 1){
             promiserraja.style.display = "flex";
             setTimeout(() => {
@@ -493,6 +497,9 @@ window.onload = () => {
 
     // Button: rranipromisepress (Promise Sealed Rani - Response)
     const handleRRaniPromisePress = () => {
+      promisejingle.play();
+      test.play();
+      promisertaud.stop();
         promiserranipress.style.display = "none";
         promisesealedrani.style.display = "flex";
     };
@@ -501,6 +508,9 @@ window.onload = () => {
 
     // Button: rrajapromisepress (Promise Sealed Raja - Response)
     const handleRRajaPromisePress = () => {
+      promisejingle.play();
+      test.play();
+        promisertaud.stop();
         promiserrajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
@@ -1025,6 +1035,7 @@ function draw() {
       document.dispatchEvent(new Event("voiceDetected"));
       checkresponse.style.display = "none";
       awake.style.display = "flex";
+      respondedaud.play();
     }
    // listeningForResponse = false;   // stop listening once detected
   }
