@@ -55,6 +55,7 @@ function preload(){
   ring = loadSound("mixkit-office-telephone-ring-1350.wav");
   dial = loadSound("9aud.mp3");
   addspeakeraud = loadSound("ElevenLabs_2025-11-04T12_00_41_Alice_pre_sp100_s50_sb75_v3.mp3");
+  victimaud = loadSound("ElevenLabs_2025-11-04T17_32_18_Alice_pre_sp100_s50_sb75_v3.mp3");
 }
 
 function setup() {
@@ -648,6 +649,8 @@ window.onload = () => {
         t1 = setTimeout(() => {
             addedspeaker.style.display = "none";
             victiminca.style.display = "flex";
+          victimaud.play();
+           addspeakeraud.stop();
 
             t2 = setTimeout(() => {
                 victiminca.style.display = "none";
