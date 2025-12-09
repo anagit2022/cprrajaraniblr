@@ -631,6 +631,7 @@ window.onload = () => {
         call112.pause();
         call112.currentTime = 0;
         ring.play();
+      addspeakeraud.play();
         dial112.style.display = "none";
         addspeaker.style.display = "flex";
     };
@@ -641,7 +642,7 @@ window.onload = () => {
     const handleSpeaker = () => {
         call112.pause();
         call112.currentTime = 0;
-        addspeakeraud.play();
+        
         addspeaker.style.display = "none";
         addedspeaker.style.display = "flex";
 
