@@ -52,6 +52,7 @@ function preload(){
   couldobserveb = loadSound("could_you_see_breathing.mp3");
   ring = loadSound("mixkit-office-telephone-ring-1350.wav");
   dial = loadSound("9aud.mp3");
+  addspeakeraud = loadSound("ElevenLabs_2025-11-04T12_00_41_Alice_pre_sp100_s50_sb75_v3.mp3");
 }
 
 function setup() {
@@ -634,6 +635,7 @@ window.onload = () => {
     const handleSpeaker = () => {
         call112.pause();
         call112.currentTime = 0;
+        addspeakeraud.play();
         addspeaker.style.display = "none";
         addedspeaker.style.display = "flex";
 
