@@ -50,6 +50,7 @@ function preload(){
   arrowimg = loadImage("arrow2.png");
   //sound
   respondedaud = loadSound("ElevenLabs_2025-06-I am .mp3");
+  respondednextaud = loadSound("ElevenLabs_2025-06-16T10_02_51_Alice_pre_sp100_s50_sb75_v3.mp3"):
   promisertaud = loadSound("ElevenLabs_2025-11-04T11_56_30_Alice_pre_sp100_s50_sb75_v3.mp3");
   //
   gasp_aud = loadSound("gasping.m4a");
@@ -468,6 +469,7 @@ window.onload = () => {
 
     // Button: nextBtn (from awake)
     const handleNext = () => {
+      respondednextaud.play();
         awake.style.display = "none";
         responded.style.display = "flex";
     };
@@ -478,6 +480,7 @@ window.onload = () => {
     const handleNextPR = () => {
         responded.style.display = "none";
          promisertaud.play();
+      respondednextaud.stop();
         if(genderState === 1){
             promiserraja.style.display = "flex";
             setTimeout(() => {
