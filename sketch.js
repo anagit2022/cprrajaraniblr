@@ -623,6 +623,7 @@ window.onload = () => {
         if (callBtn.disabled) return; // Prevent action if 112 is not dialed
         call112.pause();
         call112.currentTime = 0;
+        ring.play();
         dial112.style.display = "none";
         addspeaker.style.display = "flex";
     };
