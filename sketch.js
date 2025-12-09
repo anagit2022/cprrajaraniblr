@@ -220,6 +220,7 @@ window.onload = () => {
     */
     const addDigit = (digit) => {
         // Limit to 3 digits for "112"
+      dial.play();
         if (dialedNumber.length < 3) { 
             dialedNumber += digit;
             dialDisplay.textContent = dialedNumber;
