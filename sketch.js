@@ -615,15 +615,15 @@ window.onload = () => {
     branipromisepress.addEventListener('touchstart', handleBRaniPromisePress);
 
     // Button: bpromisepress (Promise Sealed Raja - Breathing)
-    const handleBPromisePress = () => {
+    const handleBrajaPromisePress = () => {
       promisebtaud.stop();
       promisejingle.play();
       test.play();
         promisebrajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
-    bpromisepress.onclick = handleBPromisePress;
-    bpromisepress.addEventListener('touchstart', handleBPromisePress);
+    brajapromisepress.onclick = handleBrajaPromisePress;
+    brajapromisepress.addEventListener('touchstart', handleBrajaPromisePress);
 
     // Button: nextaBtn (Call for help/AED)
     const handleNextA = () => {
