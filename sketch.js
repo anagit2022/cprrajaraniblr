@@ -700,11 +700,11 @@ window.onload = () => {
                         t6 = setTimeout(() => {
                             cpr4.style.display = "none";
                             cpr5.style.display = "flex";
-                            },5000);
-                        }, 5000);
-                    }, 5000);
-                }, 5000);
-            }, 4000);
+                            },8000);
+                        }, 8000);
+                    }, 8000);
+                }, 8000);
+            }, 8000);
         }, 10000);
     };
     speakerbtn.onclick = handleSpeaker;
