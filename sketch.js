@@ -563,7 +563,6 @@ window.onload = () => {
     const handleNormal = () => {
         breathingtype.pause();
         breathingtype.currentTime = 0;
-        breathingtype.stop();
         ifbreathnormalaud.play();
         checkbreathingtypeq.style.display = "none";
         normalbreathing.style.display = "flex";
