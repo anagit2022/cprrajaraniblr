@@ -392,6 +392,7 @@ window.onload = () => {
     const handleNowSafe = () => {
         dnotsafeAudio.pause();
         dnotsafeAudio.currentTime = 0;
+       checkrAudio.play();
         dnotsafeq.style.display = "none";
         checkresponse.style.display = "flex";
         listeningForResponse = true;
