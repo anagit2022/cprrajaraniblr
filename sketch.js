@@ -583,6 +583,7 @@ window.onload = () => {
 
     // Button: nextvBtn (from normalbreathing)
     const handleNextV = () => {
+       ifbreathnormalaud.stop();
        promisebtaud.play();
         normalbreathing.style.display = "none";
         if(genderState === 1){
