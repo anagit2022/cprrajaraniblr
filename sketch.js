@@ -98,7 +98,7 @@ window.onload = () => {
     promiserraja = document.getElementById("promiserraja");
     promiserrajapress = document.getElementById("promiserrajapress");
     promisebraja = document.getElementById("promisebraja");
-    promisebrajapress = document.getElementById("promiserrajapress");
+    promisebrajapress = document.getElementById("promisebrajapress");
     promisebrani = document.getElementById("promisebrani");
     promisebranipress = document.getElementById("promisebranipress");
     requestaed = document.getElementById("requestaed");
@@ -622,8 +622,8 @@ window.onload = () => {
         promisebrajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
-    brajapromisepress.onclick = handleBrajaPromisePress;
-    brajapromisepress.addEventListener('touchstart', handleBrajaPromisePress);
+   bpromisepress.onclick = handlebpromisepress;
+    bpromisepress.addEventListener('touchstart', handlebpromisepress);
 
     // Button: nextaBtn (Call for help/AED)
     const handleNextA = () => {
