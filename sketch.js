@@ -49,6 +49,8 @@ function preload(){
   meterimg = loadImage("bpm meter86.png");
   arrowimg = loadImage("arrow2.png");
   //sound
+  gasp_aud = loadSound("gasping.m4a");
+  normal_breath_aud = loadSound("breathing-6811.mp3");
   couldobserveb = loadSound("could_you_see_breathing.mp3");
   ring = loadSound("mixkit-office-telephone-ring-1350.wav");
   dial = loadSound("9aud.mp3");
@@ -511,11 +513,11 @@ window.onload = () => {
         console.log(breath_no);
         if(breath_no % 3 === 0) {
             // Assuming gaspAudio is defined elsewhere
-            // gaspAudio.play(); 
+             gasp_aud.play(); 
             console.log(10);
         } else if (breath_no % 5 === 0){
             // Assuming normalbreathAudio is defined elsewhere
-            // normalbreathAudio.play(); 
+            normal_breath_aud.play(); 
             console.log(20);
         }
         setTimeout(() => {
@@ -523,7 +525,8 @@ window.onload = () => {
             checkbreathing.style.display = "none";
             checkbreathingq.style.display = "flex";
              couldobserveb.play();
-            
+            gasp_aud.stop(); 
+            normal_breath_aud.stop(); 
     
         },10000);
     };
