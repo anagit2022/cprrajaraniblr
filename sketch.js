@@ -52,6 +52,9 @@ function preload(){
   gasp_aud = loadSound("gasping.m4a");
   normal_breath_aud = loadSound("breathing-6811.mp3");
   couldobserveb = loadSound("could_you_see_breathing.mp3");
+  ifbreathnormalaud = loadSound("ElevenLabs_2025-06-17T23_01_53_Alice_pre_sp100_s50_sb75_v3.mp3");
+  promisebtaud = loadSound("ElevenLabs_2025-11-04T11_55_06_Alice_pre_sp100_s50_sb75_v3.mp3");
+  
   ring = loadSound("mixkit-office-telephone-ring-1350.wav");
   dial = loadSound("9aud.mp3");
   addspeakeraud = loadSound("ElevenLabs_2025-11-04T12_00_41_Alice_pre_sp100_s50_sb75_v3.mp3");
@@ -438,7 +441,7 @@ window.onload = () => {
         promisedaud.currentTime = 0;
         promisejingle.play();
         // Assuming 'test.play()' is another audio cue
-        // test.play(); 
+         test.play(); 
         promisedrajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
@@ -560,6 +563,8 @@ window.onload = () => {
     const handleNormal = () => {
         breathingtype.pause();
         breathingtype.currentTime = 0;
+        breathingtype.stop();
+        ifbreathnormalaud.play();
         checkbreathingtypeq.style.display = "none";
         normalbreathing.style.display = "flex";
     };
@@ -579,6 +584,7 @@ window.onload = () => {
 
     // Button: nextvBtn (from normalbreathing)
     const handleNextV = () => {
+       promisebtaud.play();
         normalbreathing.style.display = "none";
         if(genderState === 1){
             promisebraja.style.display = "flex";
@@ -599,6 +605,9 @@ window.onload = () => {
 
     // Button: branipromisepress (Promise Sealed Rani - Breathing)
     const handleBRaniPromisePress = () => {
+      promisebtaud.stop();
+      promisejingle.play();
+      test.play();
         promisebranipress.style.display = "none";
         promisesealedrani.style.display = "flex";
     };
@@ -607,6 +616,9 @@ window.onload = () => {
 
     // Button: bpromisepress (Promise Sealed Raja - Breathing)
     const handleBPromisePress = () => {
+      promisebtaud.stop();
+      promisejingle.play();
+      test.play();
         promisebrajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
