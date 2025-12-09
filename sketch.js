@@ -310,6 +310,7 @@ window.onload = () => {
       
         begin1.style.display = "none";
         gender.style.display = "flex";
+        gasp_aud.play();
     };
     beginBtn.onclick = handleBegin;
     beginBtn.addEventListener('touchstart', handleBegin);
