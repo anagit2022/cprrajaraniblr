@@ -75,6 +75,7 @@ function preload(){
   aedaud = loadSound("ElevenLabs_2025-06-16T12_58_21_Alice_pre_sp100_s50_sb75_v3.mp3");
   ambaud = loadSound("ambulance-312230.mp3");
   lateaud = loadSound("negative_beeps-6008.mp3");
+  promisewtaud = loadSound("ElevenLabs_2025-11-05T06_53_28_Alice_pre_sp100_s50_sb75_v3.mp3");
 }
 
 function setup() {
@@ -807,6 +808,7 @@ window.onload = () => {
     // Button: nextwinBtn (from win)
     const handleNextWin = () => {
         win.style.display = "none";
+        promisewtaud.play();
         if(genderState === 1){
             promisewraja.style.display = "flex";
             setTimeout(() => {
@@ -826,6 +828,9 @@ window.onload = () => {
 
     // Button: wranipromisepress (Promise Sealed Rani - Win)
     const handleWRaniPromisePress = () => {
+       promisewtaud.stop();
+      promisejingle.play();
+      test.play();
         promisewranipress.style.display = "none";
         promisesealedrani.style.display = "flex";
     };
@@ -834,7 +839,9 @@ window.onload = () => {
 
     // Button: wpromisepress (Promise Sealed Raja - Win)
     const handleWPromisePress = () => {
-  
+        promisewtaud.stop();
+      promisejingle.play();
+      test.play();
         promisewrajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
@@ -873,6 +880,7 @@ window.onload = () => {
 
     // Button: nextambBtn (from amb)
     const handleNextAmb = () => {
+       promisewtaud.play();
         amb.style.display = "none";
         if(genderState === 1){
             promiseambraja.style.display = "flex";
@@ -893,6 +901,9 @@ window.onload = () => {
 
     // Button: promiseambranipress
     const handleAmbRaniPromisePress = () => {
+      promisewtaud.stop();
+      promisejingle.play();
+      test.play();
         promiseambranipress.style.display = "none";
         promisesealedrani.style.display = "flex";
     };
@@ -901,6 +912,9 @@ window.onload = () => {
 
     // Button: promiseambrajapress
     const handleAmbRajaPromisePress = () => {
+      promisewtaud.stop();
+      promisejingle.play();
+      test.play();
         promiseambrajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
@@ -910,6 +924,7 @@ window.onload = () => {
     // Button: nextaedBtn (from aed)
     const handleNextAed = () => {
         aed.style.display = "none";
+      promisewtaud.play();
         if(genderState === 1){
             promiseaedraja.style.display = "flex";
             setTimeout(() => {
@@ -929,6 +944,9 @@ window.onload = () => {
 
     // Button: promiseaedranipress
     const handleAedRaniPromisePress = () => {
+      promisewtaud.stop();
+      promisejingle.play();
+      test.play();
         promiseaedranipress.style.display = "none";
         promisesealedrani.style.display = "flex";
     };
@@ -937,6 +955,9 @@ window.onload = () => {
 
     // Button: promiseaedrajapress
     const handleAedRajaPromisePress = () => {
+      promisewtaud.stop();
+      promisejingle.play();
+      test.play();
         promiseaedrajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
