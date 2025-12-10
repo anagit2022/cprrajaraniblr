@@ -69,6 +69,12 @@ function preload(){
   cprC3aud = loadSound("ElevenLabs_2025-06-16T00_04_57_Alice_pre_sp100_s50_sb75_v3.mp3");
   cprC4aud = loadSound("ElevenLabs_2025-06-25T03_12_37_Alice_pre_sp100_s50_sb75_v3.mp3");
   cprBeginaud = loadSound("ElevenLabs_2025-11-05T03_21_18_Alice_pre_sp100_s50_sb75_v3.mp3");
+
+  press_music = loadSound("mixkit-message-pop-alert-2354.mp3");
+  winaud = loadSound("mixkit-fairy-arcade-sparkle-866.wav");
+  aedaud = loadSound("ElevenLabs_2025-06-16T12_58_21_Alice_pre_sp100_s50_sb75_v3.mp3");
+  ambaud = loadSound("ambulance-312230.mp3");
+  lateaud = loadSound("negative_beeps-6008.mp3");
 }
 
 function setup() {
@@ -1086,6 +1092,7 @@ function draw() {
 function mousePressed(){
   userStartAudio();
    pressed_time = millis() ;
+  press_music.play();
   if(currentState == "play"){
     compression_count += 1;
     console.log(compression_count);
@@ -1229,7 +1236,7 @@ function handle_inactivity(){
      currentState = "lateinactive";
      p5Screen.style.display = "none";
     lateinactive.style.display = "flex";
-    // lateaud.play();
+     lateaud.play();
      
    }
 }
@@ -1258,18 +1265,18 @@ function handle_performance(){
         p5Screen.style.display = "none";
         win.style.display = "flex";
 
-        //winaud.play();
-        //win_music.play();
+        winaud.play();
+       // win_music.play();
       }else if(diffGoal <= 8){
         currentState = "aed";
         p5Screen.style.display = "none";
         aed.style.display = "flex";
-        //aedaud.play();
+        aedaud.play();
       }else if(diffGoal <= 10){
         currentState = "amb";
         p5Screen.style.display = "none";
         amb.style.display = "flex";
-        //ambaud.play();
+        ambaud.play();
       }else if (diffGoal >= 20){
         if(fastcount>slowcount){
         currentState = "latefast";
@@ -1281,7 +1288,7 @@ function handle_performance(){
         p5Screen.style.display = "none";
         lateslow.style.display = "flex";
         
-        //lateaud.play();
+        lateaud.play();
         
       }
     }
