@@ -906,9 +906,9 @@ window.onload = () => {
 
     // Button: promiseambranipress
     const handleAmbRaniPromisePress = () => {
-      promisewtaud.stop();
+     test.play();
       promisejingle.play();
-      test.play();
+      promisewtaud.stop();
         promiseambranipress.style.display = "none";
         promisesealedrani.style.display = "flex";
     };
@@ -917,9 +917,9 @@ window.onload = () => {
 
     // Button: promiseambrajapress
     const handleAmbRajaPromisePress = () => {
-      promisewtaud.stop();
+       test.play();
       promisejingle.play();
-      test.play();
+      promisewtaud.stop();
         promiseambrajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
