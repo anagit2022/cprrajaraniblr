@@ -418,6 +418,7 @@ window.onload = () => {
             listeningForResponse = false;
             checkresponse.style.display = "none";
             checkresponseq.style.display = "flex";
+           did_spongy_respond.play();
         }, 8000);
     };
     nowsafeBtn.onclick = handleNowSafe;
