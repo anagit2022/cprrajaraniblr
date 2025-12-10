@@ -1042,7 +1042,7 @@ window.onload = () => {
         promisesealedrani.style.display = "flex";
     };
     promiselatefastranipress.onclick = handleLateFastRaniPromisePress;
-    promisesealedrani.addEventListener('touchstart', handleLateFastRaniPromisePress);
+     promiselatefastranipress.addEventListener('touchstart', handleLateFastRaniPromisePress);
 
     // Button: promiselatefastrajapress
     const handleLateFastRajaPromisePress = () => {
