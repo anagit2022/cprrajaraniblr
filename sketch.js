@@ -77,9 +77,9 @@ function preload(){
   ambaud = loadSound("ambulance-312230.mp3");
   lateaud = loadSound("negative_beeps-6008.mp3");
   promisewtaud = loadSound("ElevenLabs_2025-11-05T06_53_28_Alice_pre_sp100_s50_sb75_v3.mp3");
-  promiseiltaud = loadSound("ElevenLabs_2025-11-05T06_53_28_Alice_pre_sp100_s50_sb75_v3.mp3");
-  promisefltaud = loadSound("ElevenLabs_2025-11-05T06_53_28_Alice_pre_sp100_s50_sb75_v3.mp3");
-  promisesltaud = loadSound("ElevenLabs_2025-11-05T06_53_28_Alice_pre_sp100_s50_sb75_v3.mp3");
+  promiseiltaud = loadSound("ElevenLabs_2025-12-10T02_39_25_Alice_pre_sp100_s50_sb75_v3.mp3");
+  promisefltaud = loadSound("ElevenLabs_2025-12-10T02_40_37_Alice_pre_sp100_s50_sb75_v3.mp3");
+  promisesltaud = loadSound("ElevenLabs_2025-12-10T02_41_38_Alice_pre_sp100_s50_sb75_v3.mp3");
 }
 
 function setup() {
@@ -418,7 +418,7 @@ window.onload = () => {
             listeningForResponse = false;
             checkresponse.style.display = "none";
             checkresponseq.style.display = "flex";
-        }, 4000);
+        }, 8000);
     };
     nowsafeBtn.onclick = handleNowSafe;
     nowsafeBtn.addEventListener('touchstart', handleNowSafe);
@@ -971,6 +971,7 @@ window.onload = () => {
     // Button: nextlateinactiveBtn (from lateinactive)
     const handleNextLateInactive = () => {
         lateinactive.style.display = "none";
+       promiseiltaud.play();
         if(genderState === 1){
             promiselateinactiveraja.style.display = "flex";
             setTimeout(() => {
@@ -990,6 +991,9 @@ window.onload = () => {
 
     // Button: promiselateinactiveranipress
     const handleLateInactiveRaniPromisePress = () => {
+        promiseiltaud.stop();
+      promisejingle.play();
+      test.play();
         promiselateinactiveranipress.style.display = "none";
         promisesealedrani.style.display = "flex";
     };
@@ -998,6 +1002,9 @@ window.onload = () => {
 
     // Button: promiselateinactiverajapress
     const handleLateInactiveRajaPromisePress = () => {
+        promiseiltaud.stop();
+      promisejingle.play();
+      test.play();
         promiselateinactiverajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
@@ -1007,6 +1014,7 @@ window.onload = () => {
     // Button: nextlatefastBtn (from latefast)
     const handleNextLateFast = () => {
         latefast.style.display = "none";
+       promisefltaud.play();
         if(genderState === 1){
             promiselatefastraja.style.display = "flex";
             setTimeout(() => {
@@ -1026,6 +1034,9 @@ window.onload = () => {
 
     // Button: promiselatefastranipress
     const handleLateFastRaniPromisePress = () => {
+      promisejingle.play();
+      test.play();
+      promisefltaud.stop();
         promiselatefastranipress.style.display = "none";
         promisesealedrani.style.display = "flex";
     };
@@ -1034,6 +1045,9 @@ window.onload = () => {
 
     // Button: promiselatefastrajapress
     const handleLateFastRajaPromisePress = () => {
+      promisejingle.play();
+      test.play();
+      promisefltaud.stop();
         promiselatefastrajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
@@ -1043,6 +1057,7 @@ window.onload = () => {
     // Button: nextlateslowBtn (from lateslow)
     const handleNextLateSlow = () => {
         lateslow.style.display = "none";
+      promisesltaud.play();
         if(genderState === 1){
             promiselateslowraja.style.display = "flex";
             setTimeout(() => {
@@ -1063,6 +1078,9 @@ window.onload = () => {
   
     // Button: promiseslowfastrajapress
     const handleLateslowRajaPromisePress = () => {
+      promisejingle.play();
+      test.play();
+       promisesltaud.stop();
         promiselatealowrajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
@@ -1070,6 +1088,9 @@ window.onload = () => {
     promiselateslowrajapress.addEventListener('touchstart', handleLateslowRajaPromisePress);
 // Button: promiselateslowranipress
     const handleLateslowRaniPromisePress = () => {
+      promisejingle.play();
+      test.play();
+      promisesltaud.stop();
         promiselateslowranipress.style.display = "none";
         promisesealedrani.style.display = "flex";
     };
