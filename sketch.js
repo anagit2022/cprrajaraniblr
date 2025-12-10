@@ -712,7 +712,7 @@ window.onload = () => {
                         t6 = setTimeout(() => {
                             cpr4.style.display = "none";
                             cpr5.style.display = "flex";
-                          cprC5aud.play();
+                          cprBeginaud.play();
                           cprC4aud.stop();
                             },8000);
                         }, 8000);
@@ -730,6 +730,8 @@ window.onload = () => {
     // Button: nextc1
     const handleNextC1 = () => {
         clearTimeout(t1);
+      cprC2aud.play();
+      cprC1aud.stop();
         cpr1.style.display = "none";
         cpr2.style.display = "flex";
       
@@ -741,6 +743,8 @@ window.onload = () => {
     const handleNextC2 = () => {
         clearTimeout(t1);
         clearTimeout(t2);
+      cprC3aud.play();
+      cprC2aud.stop();
         cpr2.style.display = "none";
         cpr3.style.display = "flex";
       
@@ -753,6 +757,8 @@ window.onload = () => {
         clearTimeout(t1);
         clearTimeout(t2);
         clearTimeout(t3);
+      cprC4aud.play();
+      cprC3aud.stop();
         cpr3.style.display = "none";
         cpr4.style.display = "flex";
       
@@ -766,6 +772,8 @@ window.onload = () => {
         clearTimeout(t2);
         clearTimeout(t3);
         clearTimeout(t4);
+      cprBeginaud.play();
+      cprC4aud.stop();
         cpr4.style.display = "none";
         cpr5.style.display = "flex";
     };
