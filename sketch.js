@@ -1003,9 +1003,9 @@ window.onload = () => {
 
     // Button: promiselateinactiverajapress
     const handleLateInactiveRajaPromisePress = () => {
-        promiseiltaud.stop();
       promisejingle.play();
       test.play();
+      promiseiltaud.stop();
         promiselateinactiverajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
@@ -1042,7 +1042,7 @@ window.onload = () => {
         promisesealedrani.style.display = "flex";
     };
     promiselatefastranipress.onclick = handleLateFastRaniPromisePress;
-    promiselatefastranipress.addEventListener('touchstart', handleLateFastRaniPromisePress);
+    promisesealedrani.addEventListener('touchstart', handleLateFastRaniPromisePress);
 
     // Button: promiselatefastrajapress
     const handleLateFastRajaPromisePress = () => {
@@ -1063,7 +1063,7 @@ window.onload = () => {
             promiselateslowraja.style.display = "flex";
             setTimeout(() => {
                 promiselateslowraja.style.display = "none";
-                promiselateslowrajapress.style.display = "flex";
+                promisesealedraja.style.display = "flex";
             },2000);
         } else if(genderState === 0){
             promiselateslowrani.style.display = "flex";
