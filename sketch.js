@@ -1273,16 +1273,19 @@ function handle_performance(){
         p5Screen.style.display = "none";
         aed.style.display = "flex";
         aedaud.play();
+         winaud.play();
       }else if(diffGoal <= 10){
         currentState = "amb";
         p5Screen.style.display = "none";
         amb.style.display = "flex";
         ambaud.play();
+         winaud.play();
       }else if (diffGoal >= 20){
         if(fastcount>slowcount){
         currentState = "latefast";
         p5Screen.style.display = "none";
         latefast.style.display = "flex";
+        lateaud.play();
         }else
         if(slowcount>fastcount){
         currentState = "lateslow";
