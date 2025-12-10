@@ -1092,8 +1092,9 @@ function draw() {
 function mousePressed(){
   userStartAudio();
    pressed_time = millis() ;
-  press_music.play();
+  
   if(currentState == "play"){
+    press_music.play();
     compression_count += 1;
     console.log(compression_count);
     //press_music.play();
