@@ -1082,7 +1082,7 @@ window.onload = () => {
       promisejingle.play();
       test.play();
        promisesltaud.stop();
-        promiselatealowrajapress.style.display = "none";
+        promiselateslowrajapress.style.display = "none";
         promisesealedraja.style.display = "flex";
     };
     promiselateslowrajapress.onclick = handleLateslowRajaPromisePress;
