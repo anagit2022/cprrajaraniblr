@@ -1063,7 +1063,7 @@ window.onload = () => {
             promiselateslowraja.style.display = "flex";
             setTimeout(() => {
                 promiselateslowraja.style.display = "none";
-                promisesealedraja.style.display = "flex";
+                 promiselateslowrajapress.style.display = "flex";
             },2000);
         } else if(genderState === 0){
             promiselateslowrani.style.display = "flex";
