@@ -1250,7 +1250,7 @@ function playScreen(){
    // display time left 
   push();
   angleMode(RADIANS);
-  translate(30,590);
+  translate(30,520);
   rotate(-HALF_PI);
   textAlign(CENTER, TOP);
   textSize(20);
@@ -1264,7 +1264,7 @@ function playScreen(){
   pop();
   push();
   angleMode(RADIANS);
-  translate(52,600);
+  translate(52,550);
   rotate(-HALF_PI);
   textAlign(CENTER, TOP);
   textSize(18);
