@@ -1264,7 +1264,7 @@ function playScreen(){
   pop();
   push();
   angleMode(RADIANS);
-  translate(52,550);
+  translate(52,520);
   rotate(-HALF_PI);
   textAlign(CENTER, TOP);
   textSize(18);
