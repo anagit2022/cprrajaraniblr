@@ -234,7 +234,7 @@ window.onload = () => {
     * Checks the current dialed number and enables/disables the Call button.
     */
     const checkCallButtonState = () => {
-        if (dialedNumber === "112") {
+        if (dialedNumber === "995") {
             callBtn.disabled = false;
             callBtn.style.opacity = 1.0; 
         } else {
@@ -305,7 +305,7 @@ window.onload = () => {
 
     // --- Initialize Dial Pad State ---
     checkCallButtonState(); // Make sure the call button is disabled on load
-    dialDisplay.textContent = "112"; // Set initial placeholder text
+    dialDisplay.textContent = "995"; // Set initial placeholder text
     dialDisplay.classList.add("empty"); 
 
     // ========================================
