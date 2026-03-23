@@ -349,6 +349,7 @@ window.onload = () => {
 
     // UI Logic
     begin1.style.display = "none"; // Hide the start screen
+    intro.style.display = "none";
     cpr4.style.display = "none";   // Hide the previous CPR screen if it was open
     cpr5.style.display = "flex";   // Show the target screen
     
