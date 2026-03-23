@@ -340,7 +340,24 @@ window.onload = () => {
     };
     beginBtn.onclick = handleBegin;
     beginBtn.addEventListener('touchstart', handleBegin);
-
+// skip to play
+  const handleBubbleShortcut = () => {
+        userStartAudio();
+        begin1.style.display = "none";
+        p5Screen.style.display = "flex"; // Show the canvas container
+        
+        // Initialize p5 CPR state
+        startCanvas(); 
+        currentState = "play";
+        play_start_time = millis(); 
+        
+        console.log("Shortcut triggered: Jumping to CPR");
+    };
+    
+    if (beginBubBtn) {
+        beginBubBtn.onclick = handleBubbleShortcut;
+        beginBubBtn.addEventListener('touchstart', handleBubbleShortcut);
+    }
     // Button: rajaBtn
     const handleRaja = () => {
         genderState = 1; // ✔ Raja
