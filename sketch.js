@@ -167,7 +167,7 @@ window.onload = () => {
 
     // --- Button Element Definitions (Kept as is) ---
     const beginBtn = document.getElementById("beginBtn");
-  const beginBtn = document.getElementById("beginBubBtn");
+  const beginBubBtn = document.getElementById("beginBubBtn");
     const rajaBtn = document.getElementById("rajaBtn");
     const raniBtn = document.getElementById("raniBtn");
     const startBtn = document.getElementById("startBtn");
