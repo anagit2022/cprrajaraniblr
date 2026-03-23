@@ -342,6 +342,7 @@ window.onload = () => {
     beginBtn.addEventListener('touchstart', handleBegin);
 // skip to play
   const handleBubbleShortcut = () => {
+    userStartAudio();
         clearTimeout(t1);
         clearTimeout(t2);
         clearTimeout(t3);
