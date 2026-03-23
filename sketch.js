@@ -343,20 +343,23 @@ window.onload = () => {
 // skip to play
   const handleBubbleShortcut = () => {
     userStartAudio();
-        clearTimeout(t1);
-        clearTimeout(t2);
-        clearTimeout(t3);
-        clearTimeout(t4);
-      cprBeginaud.play();
-      cprC4aud.stop();
-        cpr4.style.display = "none";
-        cpr5.style.display = "flex";
+
+    // STOP the "ghost" timers so they don't hijack the screen later
+    [t1, t2, t3, t4, t5, t6].forEach(t => clearTimeout(t));
+
+    // UI Logic
+    begin1.style.display = "none"; // Hide the start screen
+    cpr4.style.display = "none";   // Hide the previous CPR screen if it was open
+    cpr5.style.display = "flex";   // Show the target screen
+    
+    // Audio Logic
+    cprC4aud.stop();
+    cprBeginaud.play();
     };
     
-    if (beginBubBtn) {
-        beginBubBtn.onclick = handleBubbleShortcut;
-        beginBubBtn.addEventListener('touchstart', handleBubbleShortcut);
-    }
+    beginBubBtn.onclick = handleBubbleShortcut;
+    beginBubBtn.addEventListener('touchstart', handleBubbleShortcut);
+    
     // Button: rajaBtn
     const handleRaja = () => {
         genderState = 1; // ✔ Raja
