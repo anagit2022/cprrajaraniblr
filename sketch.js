@@ -342,16 +342,14 @@ window.onload = () => {
     beginBtn.addEventListener('touchstart', handleBegin);
 // skip to play
   const handleBubbleShortcut = () => {
-        userStartAudio();
-        begin1.style.display = "none";
-        p5Screen.style.display = "flex"; // Show the canvas container
-        
-        // Initialize p5 CPR state
-        startCanvas(); 
-        currentState = "play";
-        play_start_time = millis(); 
-        
-        console.log("Shortcut triggered: Jumping to CPR");
+        clearTimeout(t1);
+        clearTimeout(t2);
+        clearTimeout(t3);
+        clearTimeout(t4);
+      cprBeginaud.play();
+      cprC4aud.stop();
+        cpr4.style.display = "none";
+        cpr5.style.display = "flex";
     };
     
     if (beginBubBtn) {
