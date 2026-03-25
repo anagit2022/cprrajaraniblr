@@ -354,6 +354,8 @@ window.onload = () => {
     cpr5.style.display = "flex";   // Show the target screen
     
     // Audio Logic
+    introAudio.pause();
+    introAudio.currentTime = 0;
     cprC4aud.stop();
     cprBeginaud.play();
     };
