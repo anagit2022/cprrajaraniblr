@@ -713,6 +713,7 @@ window.onload = () => {
         
         addspeaker.style.display = "none";
         addedspeaker.style.display = "flex";
+      
 
         // Step 1: After 10s → show victiminca
         t1 = setTimeout(() => {
@@ -761,10 +762,21 @@ window.onload = () => {
 
 
     // CPR Instructions Navigation
+  const stopAllCPRAudio = () => {
+    victimaud.stop();
+    addspeakeraud.stop();
+    cprC1aud.stop();
+    cprC2aud.stop();
+    cprC3aud.stop();
+    cprC4aud.stop();
+    // Clear ALL timers so the screen stops jumping
+    [t1, t2, t3, t4, t5, t6].forEach(t => clearTimeout(t));
+};
 
     // Button: nextc1
     const handleNextC1 = () => {
         clearTimeout(t1);
+      stopAllCPRAudio();
       cprC2aud.play();
       cprC1aud.stop();
         cpr1.style.display = "none";
@@ -778,6 +790,7 @@ window.onload = () => {
     const handleNextC2 = () => {
         clearTimeout(t1);
         clearTimeout(t2);
+      stopAllCPRAudio();
       cprC3aud.play();
       cprC2aud.stop();
         cpr2.style.display = "none";
@@ -792,6 +805,7 @@ window.onload = () => {
         clearTimeout(t1);
         clearTimeout(t2);
         clearTimeout(t3);
+      stopAllCPRAudio();
       cprC4aud.play();
       cprC3aud.stop();
         cpr3.style.display = "none";
@@ -807,6 +821,7 @@ window.onload = () => {
         clearTimeout(t2);
         clearTimeout(t3);
         clearTimeout(t4);
+      stopAllCPRAudio();
       cprBeginaud.play();
       cprC4aud.stop();
         cpr4.style.display = "none";
